@@ -4,10 +4,10 @@ libreria matplotlib: https://matplotlib.org/
   Para importar esta librería se debe descargar e incorporar al poryecto
 '''
 
-def generate_bar_chart(labels, values): 
+def generate_bar_chart(name ,labels, values): 
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.savefig('bar.png')
+  plt.savefig(f'./imgs/{name}.png')
   plt.close()
 
 def generate_pie_chart(labels, values):
